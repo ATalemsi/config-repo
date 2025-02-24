@@ -13,11 +13,11 @@ spring:
         - id: customer-service
           uri: lb://customer-service
           predicates:
-            - Path=/api/customers/**
+            - Path=/customers/**
         - id: account-service
           uri: lb://account-service
           predicates:
-            - Path=/api/accounts/**
+            - Path=/accounts/**
       globalcors:
         cors-configurations:
           '[/**]':
